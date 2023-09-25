@@ -5,7 +5,6 @@ import 'package:flame/game.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  Flame.device.setLandscape();
   runApp(const MaterialApp(home: SafeArea(child: Scaffold(body:
     GameWidget<Engine>.controlled(gameFactory: Engine.new),
   ))));
